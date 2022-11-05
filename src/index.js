@@ -34,7 +34,7 @@ mongoose.Promise = global.Promise;
 // App Setup
 app.use(
   cors({
-    origin: ["https://www.amazingandyyy.com", "http://localhost:3000"],
+    origin: ["https://buidl3.herokuapp.com/", "http://localhost:3000"],
   })
 );
 app.use(morgan("dev"));
@@ -42,7 +42,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.get("/ping", (req, res) => res.send("pong"));
 app.get("/", (req, res) =>
-  res.json({ source: "https://github.com/amazingandyyy/mern" })
+  res.json({ source: "https://github.com/blue-topaz-labs/BuidlForWeb3" })
 );
 app.post("/signup", Authentication.signup);
 app.post("/signin", Authentication.signin);
