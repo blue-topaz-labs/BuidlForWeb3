@@ -34,7 +34,7 @@ mongoose.Promise = global.Promise;
 // App Setup
 app.use(
   cors({
-    origin: ["https://buidl3.herokuapp.com/", "http://localhost:3000"],
+    origin: ["https://buidl-for-web3.vercel.app/", "http://localhost:3000"],
   })
 );
 app.use(morgan("dev"));
